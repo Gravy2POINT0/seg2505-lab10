@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  placeholder:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Placeholder
+          command: echo "No separate projects with existing CI or root scripts are present; add jobs here as projects are added."
+
+workflows:
+  main:
+    jobs:
+      - placeholder
